@@ -1,0 +1,360 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> 
+  <pattern> HELLO</pattern>
+  <template>Hello! How are you doing today?</template> 
+</category>
+
+<category> 
+  <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> 
+</category>
+
+<category> 
+  <pattern> HI</pattern>
+  <template>Hello! How are you doing today?</template> 
+</category>
+
+<category> 
+  <pattern> HI * </pattern>
+  <template><srai>HI</srai></template>
+</category>
+
+<category> 
+  <pattern> HEY</pattern>
+  <template>Hello! How are you doing today?</template> 
+</category>
+
+<category> 
+  <pattern> HEY *</pattern>
+  <template><srai>HEY</srai></template> 
+</category>
+
+<category>
+  <pattern> YO</pattern>
+  <template>Yo, what's up?</template>
+</category>
+
+<category>
+  <pattern> YO * </pattern>
+  <template><srai>YO</srai></template>
+</category>
+
+<category>
+  <pattern> MINGALABA </pattern>
+  <template>Mingalaba!</template>
+</category>
+
+<category> 
+  <pattern> MINGALABA * </pattern>
+  <template><srai>MINGALABA</srai></template>
+</category>
+
+<category>
+  <pattern> GREETINGS </pattern>
+  <template>Hello! How are you doing today?</template>
+</category>
+
+<category> 
+  <pattern> GREETINGS * </pattern>
+  <template><srai>GREETINGS</srai></template>
+</category>
+
+<category>
+  <pattern> HOW ARE YOU </pattern>
+  <template>I'm good thankyou. How can I help?</template>
+</category>
+
+<category>
+  <pattern> HOW ARE YOU *</pattern>
+  <template><srai>HOW ARE YOU</srai></template>
+</category>
+
+<category>
+  <pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about health and fitness related?</template>
+</category>
+
+<category>
+  <pattern> I AM FINE * </pattern>
+  <template>That's good to know. What would you like to discuss about health and fitness related?</template>
+</category>
+
+<category>
+  <pattern> I AM GOOD </pattern>
+  <template>That's good to know. What would you like to discuss about health and fitness related?</template>
+</category>
+
+<category>
+  <pattern> I AM GOOD * </pattern>
+  <template>That's good to know. What would you like to discuss about health and fitness related?</template>
+</category>
+
+<category>
+  <pattern> BYE </pattern>
+  <template>#0$Bye! Hope I could help and enjoy the rest of your day!</template>
+</category>
+
+<category>
+  <pattern> BYE * </pattern>
+  <template><srai>BYE </srai></template>
+</category>
+
+<category>
+  <pattern> CYA </pattern>
+  <template><srai>BYE </srai></template>
+</category>
+
+<category>
+  <pattern> PEACE </pattern>
+  <template>#0$Peace to you too.</template>
+</category>
+
+<category>
+  <pattern> GOODBYE </pattern>
+  <template><srai>BYE </srai></template>
+</category>
+
+<category>
+  <pattern> NHUATSAATPARTAAL </pattern>
+  <template><srai>BYE </srai></template>
+</category>
+
+<category>
+  <pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template>
+</category>
+
+<category>
+  <pattern> THANKS </pattern>
+  <template>You're welcome! I'm always happy to help people. Let me know if you have any more questions.</template>
+</category>
+
+<category>
+  <pattern> THANKS *</pattern>
+  <template>You're welcome! I'm always happy to help people. Let me know if you have any more questions.</template>
+</category>
+
+<category>
+  <pattern> THANK YOU *</pattern>
+  <template><srai>You're welcome! I'm always happy to help people. Let me know if you have any more questions.</srai></template>
+</category>
+
+<category>
+  <pattern> CHEERS </pattern>
+  <template>You're welcome! I'm always happy to help people. Let me know if you have any more questions.</template>
+</category>
+
+<category>
+  <pattern> CHEERS * </pattern>
+  <template>You're welcome! I'm always happy to help people. Let me know if you have any more questions.</template>
+</category>
+
+<!--- Wikipedia API -->
+<category>
+  <pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHAT ARE THE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHAT IS THE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> EXPLAIN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> discuss * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> WHO WAS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE PYU CITY STATES </pattern>
+  <template>#1$Pyu city-states</template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE PYU CITY STATES * </pattern>
+  <template><srai>TELL ME ABOUT THE PYU CITY STATES</srai></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE BAGAN KINGDOM </pattern>
+  <template>#1$Bagan Kingdom</template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT BAGAN * </pattern>
+  <template><srai>TELL ME ABOUT THE BAGAN KINGDOM</srai></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE THINGYAN FESTIVAL</pattern>
+  <template>#1$Myanmar Thingyan Festival</template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT *</pattern>
+  <template>#1$<star index="1"/></template>
+</category>
+
+<category>
+  <pattern> TELL ME MORE ABOUT *</pattern>
+  <template>#1$<star index="1"/></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THINGYAN * </pattern>
+  <template><srai>TELL ME ABOUT THE THINGYAN FESTIVAL</srai></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE LANDMARKS IN BURMA </pattern>
+  <template>#1$List of landmarks in Myanmar</template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE LANDMARKS IN MYANMAR </pattern>
+  <template><srai>TELL ME ABOUT THE LANDMARKS IN BURMA</srai></template>
+</category>
+
+<category>
+  <pattern> TELL ME ABOUT THE LANDMARKS * </pattern>
+  <template><srai>TELL ME ABOUT THE LANDMARKS IN BURMA</srai></template>
+</category>
+
+<category>
+  <pattern> WHAT ARE THE POPULAR FESTIVALS IN MYANMAR </pattern>
+  <template>#1$List of popular festivals in Myanmar</template>
+</category>
+
+<category>
+  <pattern> WHAT ARE THE POPULAR FESTIVALS IN BURMA </pattern>
+  <template>#1$List of popular festivals in Myanmar</template>
+</category>
+
+<category>
+  <pattern>WHAT DO YOU KNOW ABOUT *</pattern>
+  <template><srai>WHAT IS A <star/></srai></template>
+</category>
+
+<category>
+  <pattern>I KNOW THAT * IS *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>I CAN CONFIRM THAT * IS *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>I CAN CONFIRM THAT * LOOKS LIKE *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>I CAN CONFIRM THAT * LIKES *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>I KNOW THAT * LIKES *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>I KNOW THAT * LOOKS LIKE *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>DID YOU KNOW THAT * IS *</pattern>
+  <template>#31$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>CHECK THAT * IS *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>CHECK THAT * ARE *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>CONFIRM THAT * IS *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>DO YOU KNOW THAT * IS *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>DID YOU KNOW THAT * IS *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern>DO * LIKE *</pattern>
+  <template>#32$ <star index="1"/> is <star index="2"/></template>
+</category>
+
+<category>
+  <pattern> IDENTIFY IMAGE </pattern>
+  <template>#2$</template>
+</category>
+
+
+
+<!-- Add interactions where when you say "could you explain more about it please"...etc, then the chatbot will explain more about the topic in the user's previous response rather than not understanding what the user is asking to explain about.-->
+
+<!-- Default reaction -->
+<category>
+  <pattern> * </pattern>
+  <template>#99$</template>
+</category>
+
+</aiml>
